@@ -1,7 +1,7 @@
 # Project_SantasBagHub
 Relational Database for Online Christmas-Themed Platform 
 
-# Industry Overview
+## Industry Overview
 Global Christmas Market: In 2022, the global Christmas market boasted a staggering valuation of US$800 billion, with projections indicating that it will reach an impressive US$1 trillion by 2027, marking a remarkable compound annual growth rate (CAGR) of 6.3%. Several key factors contribute to this continued expansion:
  •	Increasing Disposable Income: Developing economies are witnessing a rise in disposable income, allowing consumers to allocate more resources to festive celebrations.
  •	Online Retail Surge: The proliferation of online retail channels has significantly augmented the accessibility and diversity of Christmas products, contributing to market growth.
@@ -36,10 +36,10 @@ Consumer Behavior Surrounding Christmas: American consumers exhibit distinct pat
  •	Personalization and Customization: There is a growing demand for personalized and customized gifts and experiences that align with individual preferences and interests.
  •	Social Media Influence: Social media platforms wield considerable sway in shaping consumer choices and influencing Christmas trends.
 
-# Business Background
+## Business Background
 SantasBagHub,  established in 2023, is a premier e-commerce platform dedicated to celebrating the joy and spirit of Christmas all year round. This innovative online marketplace is not just about shopping; it's a comprehensive Christmas-centric universe, designed to cater to the unique festive needs of each customer. 
 
-# The Objectives and the Solution Techniques
+## The Objectives and the Solution Techniques
 Objectives:
  •	Develop a centralized DBMS for customer, product, and transaction management.
  •	Ensure data integrity and support business analytics.
@@ -52,10 +52,10 @@ Solutions:
  •	Implement foreign keys for data relationships and indexing for query optimization.
  •	Integrate data visualization for real-time business insights.
 
-# Value Proposition
+## Value Proposition
 Our extensive range of carefully curated Christmas-specific products and services at SantasBagHub helps holiday enthusiasts and festive families who want to immerse themselves in the Christmas spirit by finding the perfect holiday gifts and decorations. We enable our diverse customers to easily navigate our uniquely picked selection through a dedicated filtering system that offers the most popular, most recommended, and lowest price features, reducing the frustration of endless searching and avoiding the disappointment of irrelevant results. Additionally, we amplify the joy of holiday shopping by providing eco-friendly options, enabling a purchase with a purpose and a deeper connection to the festive season. Unlike other e-commerce platforms that offer a broader, less specialized product range, (SantasBagHub) focuses exclusively on Christmas-related items, ensuring that every product is relevant to our customer's holiday needs and celebrations.
 
-# Business Requirements
+## Business Requirements
 The Platform will track **Customers**, **Products**, **Inventory status**, **Ratings**, **Orders**, **Discounts**, **Sales**, **Payments** and **Shipping details**.
 
 For each **Customers**:
@@ -115,7 +115,7 @@ For each **Shipping_Details**:
  -	Estimate_delivery_time
  -	Shipping_contact_number 
 
-# Cardinality Relationships:
+## Cardinality Relationships:
 **Customers to Orders:** One-to-Many (1:M). Each customer (identified by Customer_id) can place multiple orders, but each order (identified by Order_id) is associated with one customer.
 **Orders to Products:** Many-to-Many (M:N). An order can contain multiple products, and a product can be part of multiple orders. This relationship typically requires a junction table, which in this schema is represented by the "Sales" entity that includes Order_id and Product_id as foreign keys.
 **Orders to Payments:** One-to-One (1:1). Each order is associated with a single payment, and each payment is linked to a single order. This is indicated by Payment_id being a foreign key in the "Orders" entity.
@@ -124,7 +124,7 @@ For each **Shipping_Details**:
 **Products to Inventory_Status:** One-to-One (1:1). Each product has a corresponding inventory status, indicated by Product_id being a foreign key in the "Inventory_Status" entity.
 **Products to Rating:** One-to-Many (1:M). Each product, represented by Product_id, can be reviewed and receive ratings from multiple customers, which means a single product can have many ratings associated with it. However, each rating is specific to one product, indicating a one-to-many relationship from Products to Ratings in the database.
 
-# ER-Diagram of SantasBagHub
+## ER-Diagram of SantasBagHub
 
 ![SantasBagHub_ERD](https://github.com/Q-I-C/Project_SantasBagHub/assets/101164186/97f90bb0-e945-4074-9241-af6de6d60111)
 
@@ -134,7 +134,7 @@ For each **Shipping_Details**:
 
 
 
-# Relational Schema Diagram
+## Relational Schema Diagram
 
 ![SantasBagHub_Relational_Schema](https://github.com/Q-I-C/Project_SantasBagHub/assets/101164186/d282f0d4-c177-406a-890e-270ba72309d3)
 
